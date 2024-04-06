@@ -1,15 +1,12 @@
 .ipynb_checkpoints
 __pycache__
 archive/
-data/NCPacFeats/
+data/NCPacFeats/*
+dataPreprocOutputs/*
 TODO
 
 ash/
 ils/
-symmol/
-data/
-dataPreprocOutputs/
-
 FIGURES/
 
 metal-nanoparticle-surface-atoms-clustering-exploratory-data-analysis.ipynb
