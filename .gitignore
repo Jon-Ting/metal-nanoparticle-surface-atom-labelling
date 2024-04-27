@@ -12,5 +12,3 @@ FIGURES/ILSclust/snapshots/*.png
 
 metal-nanoparticle-surface-atoms-clustering-exploratory-data-analysis.ipynb
 metal-nanoparticle-surface-atoms-clustering-miscellaneous.ipynb
-
-data/*pickle
