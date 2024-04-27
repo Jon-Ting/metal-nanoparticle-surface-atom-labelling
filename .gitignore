@@ -1,7 +1,7 @@
 .ipynb_checkpoints
 __pycache__
 archive/
-data/NCPacFeats/*
+NCPac/featDir/*
 dataPreprocOutputs/*
 TODO
 

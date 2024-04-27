@@ -1,0 +1,46 @@
+disPd1.xyz        - Name of xyz input file                                               [in_filexyz] 
+4                 - Decimal places in coordinates                                        [in_xyz_prec]
+10.0              - Buffer distance from box boundaries in each axis                     [in_bound_dist]
+1                 - Write out to screen                                       (0=N,1=Y)  [in_write_screen]
+0                 - Read in surface data 5th column                           (0=N,1=Y)  [in_5th_option] 
+Pd 3.3            - NN unique cutoff matrix (line1 type1,r1r1,r1r2, line2 type2 r2r2)    [in_cutoff(i,j)]  
+30.0 30.0 30.0    - x,y,z cell length (Angstrom)                                         [in_xl,in_yl,in_zl]
+1 1 1             - First frame, last frame, frames between analysis                     [in_frames_start,in_frames_end,in_frames_jump]
+0.05              - Reduced density (0=uses particles/cell volume for each frame)        [in_density]
+0.08 120          - g(r) spacing (Angstrom), g(r) points (range = spacing x points)      [in_delr,in_gr_points]
+513               - S(q) points (must be 2^n+1, i.e. 65,129,257,513,1025,..)             [in_sq_points]
+0                 - CLUSTER ANALYSIS                                                     [in_cluster_flag]
+0                 - Filter out below cluster size (0=no filter,-1=largest only)          [in_mincluster]
+1                 - SURFACE LAYER FIND & ANALYSIS                             (0=N,1=Y)  [in_surf_flag]  
+45.0              - Cone angle beyond which defines surface particles                    [in_cone_angle]
+3000              - Number of points in spherical point distribution                     [in_surf_points]
+0                 - CHAIN ANALYSIS                                            (0=N,1=Y)  [in_chain_flag]
+1                 - Q6 ORDER ANALYSIS                                         (0=N,1=Y)  [in_q6order_flag]
+0.7               - q6(i).q6(j) min value to classify as similarly 'bonded'              [in_q6order_dotmin]
+0                 - SIGNATURE CELLS ANALYSIS                                  (0=N,1=Y)  [in_sc_flag]
+0.15              - Minimum average separation for classification accept (Angstrom)      [in_sc_cutoff]
+120               - Angular search resolution (degrees)                                  [in_sc_res]
+4                 - Number of SC to use (0 = read from file, -1 = search)                [in_sc_cells] 
+1 2 3 4           - SC labels to use (see manual for internally defined SC labels)       [in_sc_labs(i)]
+0                 - STRUCTURAL UNIT ANALYSIS                                  (0=N,1=Y)  [in_SU_flag]  
+3 3 0 0           - 1st SU to track (central particle type, no. of type1,type2,type3 particles in first nn shell) [in_nnhood(i,j)]    
+1 0 0 4           
+1 0 0 2 
+3 3 0 1
+1 0 0 3
+1 5 0 0
+1 6 0 0
+1 7 0 0
+1 8 0 0
+1 9 0 0           - 10th SU to track 
+1                 - FRACTAL DIMENSION ANALYSIS                                (0=N,1=Y)  [in_fradim_flag]
+6                 - Maximum box division                                                 [in_fradim_maxres]
+5                 - (Deactivated) Fractal dimension box length interval                  [in_fd_r_int]
+0                 - (Deactivated) FRACTAL DIMENSION ATOM CENTRE               (0=N,1=Y)  [in_fd_ac_flag]
+6                 - (Deactivated) Maximum box division for above                         [in_fd_ac_maxres]
+0                 - (Deactivated) FRACTAL DIMENSION ATOM BALL VOLUME          (0=N,1=Y)  [in_fd_bv_flag]
+7                 - (Deactivated) Maximum box division for above                         [in_fd_bv_maxres]
+0                 - (Deactivated) FRACTAL DIMENSION NANOPARTICLE SURFACE AREA (0=N,1=Y)  [in_fd_sa_flag]
+7                 - (Deactivated) Maximum box division for above                         [in_fd_sa_maxres]
+0                 - LINDEMANN INDEX                                           (0=N,1=Y)  [in_lindem_flag]
+5                 - Number of frame for time average                                     [in_lindem_frames]
